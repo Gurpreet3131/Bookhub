@@ -8,19 +8,22 @@ import android.widget.TextView;
 
 public class register extends AppCompatActivity {
 
+    TextView firstNameTv;
+    EditText firstNameEt;
+    GridView grid;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        TextView firstNameTv;
-        EditText firstNameEt;
-        GridView grid;
+
         grid = (GridView) findViewById(R.id.grid);
         firstNameTv = new TextView(this);
         firstNameEt = new EditText(this);
         firstNameTv.setText("First Name: ");
         grid.addView(firstNameTv);
         grid.addView(firstNameEt);
+
     }
 
 }

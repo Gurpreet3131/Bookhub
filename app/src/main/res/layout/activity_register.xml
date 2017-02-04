@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.diksha.hack1.HackActivity"
+    tools:context="com.example.dragneel.bookhub.register"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -35,21 +35,11 @@
             android:layout_height="0dp"
             android:columnWidth="90dp"
             android:numColumns="2"
-            android:numRows="8"
             android:verticalSpacing="10dp"
             android:horizontalSpacing="10dp"
             android:stretchMode="columnWidth"
             android:gravity="center"
             android:layout_weight="11.59">
-
-
-
-
-
-
-
-
-
         </GridView>
     </LinearLayout>
 </ScrollView>
