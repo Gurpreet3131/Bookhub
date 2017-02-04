@@ -1,28 +1,18 @@
 package com.example.dragneel.bookhub;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.EditText;
-import android.widget.GridView;
+import android.widget.GridLayout;
 import android.widget.TextView;
 
 public class register extends AppCompatActivity {
 
-    TextView firstNameTv;
-    EditText firstNameEt;
-    GridView grid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
-        grid = (GridView) findViewById(R.id.grid);
-        firstNameTv = new TextView(this);
-        firstNameEt = new EditText(this);
-        firstNameTv.setText("First Name: ");
-        grid.addView(firstNameTv);
-        grid.addView(firstNameEt);
 
     }
 
