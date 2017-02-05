@@ -45,18 +45,8 @@
             <EditText
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:hint="First Name" />
-
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="Last name "
-                android:textSize="20sp" />
-
-            <EditText
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:hint="Last Name" />
+                android:hint="First Name"
+                android:id="@+id/EtfirstName" />
 
             <TextView
                 android:layout_height="wrap_content"
@@ -67,7 +57,8 @@
             <EditText
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:hint="Username" />
+                android:hint="Username"
+                android:id="@+id/Etusername" />
 
             <TextView
                 android:layout_height="wrap_content"
@@ -80,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
                 android:ems="8"
-                android:id="@+id/editText" />
+                android:id="@+id/Etemail" />
 
             <TextView
                 android:layout_height="wrap_content"
@@ -93,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:hint="Contact Number"
-                />
+                android:id="@+id/Etcontact" />
 
             <TextView
                 android:layout_height="wrap_content"
@@ -106,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="121dp"
                 android:inputType="textPassword"
-                />
+                android:id="@+id/Etpassword" />
 
             <TextView
                 android:layout_height="wrap_content"
@@ -127,7 +118,8 @@
             android:layout_width="match_parent"
             android:layout_height="50sp"
             android:text="TERMS AND CONDITIONS"
-            android:onClick="termsfunc"/>
+            android:onClick="termsfunc"
+            android:id="@+id/terms" />
 
         <CheckBox
             android:layout_width="match_parent"
@@ -137,7 +129,9 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="50sp"
-            android:text="REGISTER"/>
+            android:text="REGISTER"
+            android:id="@+id/bRegister"
+            android:onClick="regfunc"/>
 
     </LinearLayout>
 </ScrollView>

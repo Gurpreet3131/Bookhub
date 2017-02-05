@@ -14,7 +14,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/Etemail"
         android:hint="Enter User Name "
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -27,7 +27,7 @@
         android:ems="10"
         android:id="@+id/editText2"
         android:hint="Enter Password"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/Etemail"
         android:layout_alignParentStart="true" />
 
     <TextView
