@@ -20,42 +20,124 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:weightSum="1">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="REGISTER"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
-            android:textSize="25sp"
-            android:id="@+id/textView5" />
+            android:textSize="24sp"
+            android:id="@+id/registerTv" />
 
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/grid"
-            android:columnCount="2"
-            android:rowCount="8"
-            >
+            android:columnCount="2">
 
             <TextView
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:text="First name= "
-                android:textSize="24sp"
+                android:text="First Name "
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="First Name" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Last name "
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="Last Name" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Username"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="Username" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Email"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="8"
+                android:id="@+id/editText" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Contact No."
+                android:textSize="20sp"
                 />
 
             <EditText
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:hint="First Name"
+                android:hint="Contact Number"
                 />
 
             <TextView
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:text="Last name= "
+                android:text="Password"
+                android:textSize="20sp"
                 />
 
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="121dp"
+                android:inputType="textPassword"
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Retype Password"
+                android:textSize="17sp"
+                />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="121dp"
+                android:inputType="textPassword"
+
+                />
         </GridLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:text="TERMS AND CONDITIONS"
+            android:onClick="termsfunc"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:text="By creating an account, I agree to the terms and conditions of BOOKHUB."/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:text="REGISTER"/>
+
     </LinearLayout>
 </ScrollView>

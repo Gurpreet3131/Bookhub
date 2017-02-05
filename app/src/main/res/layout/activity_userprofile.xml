@@ -10,8 +10,9 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/MyAppbar"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:fitsSystemWindows="true">
+        android:layout_height="300dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/collapse_toolbar"
@@ -23,19 +24,18 @@
 
             <ImageView
                 android:id="@+id/bgheader"
-
+                android:background="@drawable/userprof"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
                 android:fitsSystemWindows="true"
-                android:background="@drawable/unknownuser"
-                app:layout_collapseMode="pin" />
+                app:layout_collapseMode="parallax" />
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/MyToolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                app:layout_collapseMode="parallax" />
+                app:layout_collapseMode="pin" />
 
         </android.support.design.widget.CollapsingToolbarLayout>
 
@@ -47,8 +47,20 @@
         android:layout_gravity="fill_vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/unknownuser"/>
+
+        </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
 
+
 </android.support.design.widget.CoordinatorLayout>
+
