@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class registerRequest extends StringRequest {
 
-    private static final String REGISTER_REQUEST_URL = "127.0.0.1";
+    private static final String REGISTER_REQUEST_URL = "http://glug.nith.ac.in/uploadbin/sharing/register.php";
     private Map<String, String> params;
 
     public registerRequest(String firstName, String username, String email, String contact, String password, Response.Listener<String> listener)
@@ -20,10 +20,10 @@ public class registerRequest extends StringRequest {
         super(Method.POST, REGISTER_REQUEST_URL, listener, null);
         params = new HashMap<>();
         params.put("uname",username);
-        params.put("pswd",password);
+        params.put("pass",password);
         params.put("name",firstName);
         params.put("email",email);
-        params.put("mobile",contact);
+        params.put("phn",contact);
     }
 
     public Map<String, String> getParams()

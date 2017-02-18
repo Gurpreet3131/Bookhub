@@ -12,15 +12,15 @@ import java.util.Map;
 
 public class loginRequest extends StringRequest {
 
-    private static final String LOGIN_REQUEST_URL = "127.0.0.1";
+    private static final String LOGIN_REQUEST_URL = "http://glug.nith.ac.in/uploadbin/api/login2.php";
     private Map<String, String> params;
 
     public loginRequest(String username, String password, Response.Listener<String> listener)
     {
         super(Method.POST, LOGIN_REQUEST_URL, listener, null);
         params = new HashMap<>();
-        params.put("uname",username);
-        params.put("pswd",password);
+        params.put("idd",username);
+       // params.put("pass",password);
     }
 
     public Map<String, String> getParams()

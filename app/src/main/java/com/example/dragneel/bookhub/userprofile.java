@@ -6,6 +6,7 @@ import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 
 public class userprofile extends AppCompatActivity {
 
@@ -35,5 +36,11 @@ public class userprofile extends AppCompatActivity {
             finish();
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void catbuttonfunc(View view)
+    {
+        Intent in = new Intent(this,category.class);
+        startActivity(in);
     }
 }

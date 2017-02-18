@@ -63,10 +63,8 @@ public class bookAdapter extends BaseAdapter {
         }
 
         TextView bname = (TextView) row.findViewById(R.id.booknameid);
-        TextView bcost = (TextView) row.findViewById(R.id.costid);
 
         bname.setText(bookname.get(position));
-        bcost.setText(cost.get(position));
 
         return null;
     }
